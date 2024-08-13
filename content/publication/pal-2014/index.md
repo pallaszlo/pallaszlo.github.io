@@ -1,0 +1,26 @@
+---
+title: Wireless sensor network localization using a multistage approach
+authors:
+- Laszlo Pal
+date: '2014-05-01'
+publishDate: '2024-08-13T10:49:12.427824Z'
+publication_types:
+- paper-conference
+publication: '*2014 IEEE 9th IEEE International Symposium on Applied Computational
+  Intelligence and Informatics (SACI)*'
+doi: 10.1109/saci.2014.6840071
+abstract: Wireless sensor networks (WSN) are a collection of devices, capable of a
+  limited amount of data processing and communication. The geographic location of
+  sensor nodes is a basic input for many applications of wireless sensor networks.
+  To determine the positions of sensors, numerous localization algorithms have been
+  proposed recently. In this paper, we propose a multistage type localization scheme
+  where trilateration, local search and simulated annealing are applied to determine
+  the positions of the sensors. The performance in terms of localization error and
+  function evaluation number is tested by simulations for different topologies and
+  compared with a well-known simulated annealing method.
+tags:
+- Simulated annealing
+- Wireless sensor networks
+- Network topology
+- Search methods
+---
