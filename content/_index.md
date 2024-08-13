@@ -56,13 +56,14 @@ sections:
   - block: collection
     content:
       title: Recent Publications
+      headless: true
       text: ""
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
-      view: citation
+      view: compact
   - block: collection
     id: talks
     content:
