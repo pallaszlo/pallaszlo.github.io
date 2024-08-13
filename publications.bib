@@ -1,0 +1,220 @@
+@Article{Posik2012,
+  author    = {Petr Pošík and Waltraud Huyer and László Pál},
+  journal   = {Evolutionary Computation},
+  title     = {A Comparison of Global Search Algorithms for Continuous Black Box Optimization},
+  year      = {2012},
+  issn      = {1063-6560},
+  month     = dec,
+  pages     = {509--541},
+  volume    = {20},
+  abstract  = {Four methods for global numerical black box optimization with origins in the mathematical programming community are described and experimentally compared with the state of the art evolutionary method, BIPOP-CMA-ES. The methods chosen for the comparison exhibit various features that are potentially interesting for the evolutionary computation community: systematic sampling of the search space (DIRECT, MCS) possibly combined with a local search method (MCS), or a multi-start approach (NEWUOA, GLOBAL) possibly equipped with a careful selection of points to run a local optimizer from (GLOBAL). The recently proposed “comparing continuous optimizers” (COCO) methodology was adopted as the basis for the comparison. Based on the results, we draw suggestions about which algorithm should be used depending on the available budget of function evaluations, and we propose several possibilities for hybridizing evolutionary algorithms (EAs) with features of the other compared algorithms.},
+  doi       = {10.1162/EVCO_a_00084},
+  issue     = {4},
+  keywords  = {Real parameter optimization, continuous domain, black box optimization, benchmarking, deterministic global optimization, stochastic global optimization},
+  publisher = {MIT Press},
+}
+
+@Article{Goitom2022,
+  author    = {Goitom, Simret Kidane and Papp, Máté and Kovács, Márton and Nagy, Tibor and Zsély, István Gy. and Turányi, Tamás and Pál, László},
+  journal   = {Combustion Theory and Modelling},
+  title     = {Efficient numerical methods for the optimisation of large kinetic reaction mechanisms},
+  year      = {2022},
+  issn      = {1741-3559},
+  month     = aug,
+  number    = {6},
+  pages     = {1071--1097},
+  volume    = {26},
+  abstract  = {Optimisation of detailed combustion mechanisms means that the corresponding kinetic model is fitted to experimental data via optimising their important rate and thermodynamic parameters within their domain of uncertainty. Typically, several dozen parameters are fitted to several hundred to several thousand data points. Many numerical optimisation methods have been used, but the efficiency of these methods has not been compared systematically. In this work, parameters of an H2/O2/NOx mechanism (214 reaction steps of 35 species) were fitted to 1552 indirect (ignition delay times measured in shock tubes and concentrations measured in flow reactors) and 755 direct measurements. Three test cases were investigated: (1) fitting the Arrhenius parameters of 2 reaction steps to 732 data points; (2) fitting the Arrhenius parameters of 4 reaction steps to 1077 data points; (3) fitting the Arrhenius parameters of 10 reaction steps to 2307 data points. All 3 cases were investigated in 2 ways: fitting the A-parameters only and fitting all Arrhenius parameters (5, 11 and 29 parameters, respectively). A series of global (FOCTOPUS, genetic algorithm, simulated annealing, particle swarm optimisation, covariance matrix adaptation evolutionary strategy (CMA-ES)) and local (simplex, pattern search, interior-point, quasi-Newton, BOBYQA, NEWUOA) optimisation methods were tested on these cases, some of them in two variants. The methods were compared in terms of the final error function value and number of error function evaluations. The main conclusions are that the FOCTOPUS resulted in the lowest final error value in all cases, but this method required relatively many error function evaluations. As the task became more difficult, more and more methods failed. A variant of the BOBYQA method looked stable and efficient in all cases.},
+  doi       = {10.1080/13647830.2022.2110945},
+  keywords  = {combustion mechanism development,comparison of optimisation methods,optimisation of Arrhenius parameters},
+  publisher = {Informa UK Limited},
+}
+
+@Article{Pal2023,
+  author    = {Pál, László and Sándor, Zsolt},
+  journal   = {International Journal of Industrial Organization},
+  title     = {Comparing procedures for estimating random coefficient logit demand models with a special focus on obtaining global optima},
+  year      = {2023},
+  issn      = {0167-7187},
+  month     = may,
+  pages     = {102950},
+  volume    = {88},
+  abstract  = {We compare several nested fixed point and optimization procedures for computing the estimator of the widely-used empirical market demand model developed by Berry et al. (1995). It is well-known that the optimization may often lead to multiple local optima, which, if ignored, can lead to erroneous policy conclusions. By combining the frequencies of finding the global minima and the computing times, we propose a new indicator that provides the computing time needed for obtaining the global minima. Using this indicator, we find that the Spectral and Squarem methods (Reynaerts et al., 2012) outperform the benchmark contraction iterations method and the MPEC (Dubé et al., 2012) and ABLP (Lee and Seo, 2015) methods. Moreover, when the share of the outside alternative is relatively large, two derivative-free optimization algorithms, which require less calculations and coding than derivative-based algorithms, outperform the best derivative-based methods. A simple argument suggests that the latter statement is likely to be true for other versions of the model as well.},
+  doi       = {10.1016/j.ijindorg.2023.102950},
+  publisher = {Elsevier BV},
+}
+
+@Article{Pal2017,
+  author    = {Pál, László},
+  journal   = {Central European Journal of Operations Research},
+  title     = {Empirical study of the improved UNIRANDI local search method},
+  year      = {2017},
+  issn      = {1613-9178},
+  month     = mar,
+  number    = {4},
+  pages     = {929--952},
+  volume    = {25},
+  abstract  = {UNIRANDI is a stochastic local search algorithm that performs line searches from starting points along good random directions. In this paper, we focus on a modified version of this method. The new algorithm, addition to the random directions, considers more promising directions in order to speed up the optimization process. The performance of the new method is tested empirically on standard test functions in terms of function evaluations, success rates, error values, and CPU time. It is also compared to the previous version as well as other local search methods. Numerical results show that the new method is promising in terms of robustness and efficiency.},
+  doi       = {10.1007/s10100-017-0470-2},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Pal2012,
+  author    = {László Pál and Tibor Csendes and Mihály Csaba Markót and Arnold Neumaier},
+  journal   = {Evolutionary Computation},
+  title     = {Black Box Optimization Benchmarking of the GLOBAL Method},
+  year      = {2012},
+  issn      = {1063-6560},
+  month     = dec,
+  number    = {4},
+  pages     = {609--639},
+  volume    = {20},
+  abstract  = {GLOBAL is a multi-start type stochastic method for bound constrained global optimization problems. Its goal is to find the best local minima that are potentially global. For this reason it involves a combination of sampling, clustering, and local search. The role of clustering is to reduce the number of local searches by forming groups of points around the local minimizers from a uniformly sampled domain and to start few local searches in each of those groups. We evaluate the performance of the GLOBAL algorithm on the BBOB 2009 noiseless testbed, containing problems which reflect the typical difficulties arising in real-world applications. The obtained results are also compared with those obtained form the simple multi-start procedure in order to analyze the effects of the applied clustering rule. An improved parameterization is introduced in the GLOBAL method and the performance of the new procedure is compared with the performance of the MATLAB GlobalSearch solver by using the BBOB 2010 test environment.},
+  doi       = {10.1162/EVCO_a_00089},
+  issue     = {4},
+  keywords  = {Global optimization, stochastic search, clustering, multi-start method, benchmarking},
+  publisher = {MIT Press},
+}
+
+@Article{Pal2009,
+  author    = {Pál, László and Csendes, Tibor},
+  journal   = {Optimization Methods and Software},
+  title     = {INTLAB implementation of an interval global optimization algorithm},
+  year      = {2009},
+  issn      = {1029-4937},
+  month     = oct,
+  number    = {4–5},
+  pages     = {749--759},
+  volume    = {24},
+  abstract  = {We describe a new implementation of an interval optimization algorithm with focus on the software related issues. The algorithm implemented in MATLAB that uses the INTLAB package supporting interval calculations and automatic differentiation solves the bound constrained global optimization problem. The method itself is a simplified version of those interval techniques much investigated in the past, that was first developed from the global optimization algorithm of the Numerical Toolbox for Verified Computing. According to the numerical studies completed, the new INTLAB-based implementation is closely as efficient as its C-XSC-based basis algorithm – with the exception of the CPU time needed (the longer computations are due to the interpreter nature of MATLAB).},
+  doi       = {10.1080/10556780902753395},
+  publisher = {Informa UK Limited},
+}
+
+@Article{Csendes2007,
+  author    = {Csendes, Tibor and Pál, László and Sendín, J. Oscar H. and Banga, Julio R.},
+  journal   = {Optimization Letters},
+  title     = {The GLOBAL optimization method revisited},
+  year      = {2007},
+  issn      = {1862-4480},
+  month     = nov,
+  number    = {4},
+  pages     = {445--454},
+  volume    = {2},
+  abstract  = {The multistart clustering global optimization method called GLOBAL has been introduced in the 1980s for bound constrained global optimization problems with black-box type objective function. Since then the technological environment has been changed much. The present paper describes shortly the revisions and updates made on the involved algorithms to utilize the novel technologies, and to improve its reliability. We discuss in detail the results of the numerical comparison with the old version and with C-GRASP, a continuous version of the GRASP method. According to these findings, the new version of GLOBAL is both more reliable and more efficient than the old one, and it compares favorably with C-GRASP too.},
+  doi       = {10.1007/s11590-007-0072-3},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Laszlo2022,
+  author    = {László, PáL},
+  journal   = {Acta Universitatis Sapientiae, Economics and Business},
+  title     = {Asset Allocation Strategies Using Covariance Matrix Estimators},
+  year      = {2022},
+  issn      = {2360-0047},
+  month     = sep,
+  number    = {1},
+  pages     = {133--144},
+  volume    = {10},
+  abstract  = {The covariance matrix is an important element of many asset
+allocation strategies. The widely used sample covariance matrix estimator is
+unstable especially when the number of time observations is small and the
+number of assets is large or when high-dimensional data is involved in the
+computation. In this study, we focus on the most important estimators that
+are applied on a group of Markowitz-type strategies and also on a recently
+introduced method based on hierarchical tree clustering. The performance
+tests of the portfolio strategies using different covariance matrix estimators
+rely on the out-of-sample characteristics of synthetic and real stock data.},
+  doi       = {10.2478/auseb-2022-0008},
+  keywords  = {portfolio optimization,covariance matrix estimators},
+  publisher = {Universitatea Sapientia din municipiul Cluj-Napoca},
+}
+
+@Book{Banhelyi2018,
+  author    = {Bánhelyi, Balázs and Csendes, Tibor and Lévai, Balázs and Pál, László and Zombori, Dániel},
+  publisher = {Springer International Publishing},
+  title     = {The GLOBAL Optimization Algorithm: Newly Updated with Java Implementation and Parallelization},
+  year      = {2018},
+  isbn      = {9783030023751},
+  abstract  = {This book explores the updated version of the GLOBAL algorithm which contains improvements for a local search algorithm and new Java implementations. Efficiency comparisons to earlier versions and on the increased speed achieved by the parallelization, are detailed. Examples are provided for students as well as researchers and practitioners in optimization, operations research, and mathematics to compose their own scripts with ease. A GLOBAL manual is presented in the appendix to assist new users with modules and test functions.  
+GLOBAL is a successful stochastic multistart global optimization algorithm that has passed several computational tests, and is efficient and reliable for small to medium dimensional global optimization problems. The algorithm uses clustering to ensure efficiency and is modular in regard to the two local search methods it starts with, but it can also easily apply other local techniques. The strength of this algorithm lies in its reliability and adaptive algorithm parameters. The GLOBAL algorithm is free to download also in the earlier Fortran, C, and MATLAB implementations.},
+  doi       = {10.1007/978-3-030-02375-1},
+  issn      = {2191-575X},
+  journal   = {SpringerBriefs in Optimization},
+  keywords  = {Global Optimization,Java Implementation,GLOBAL Algorithm,Parallelization,local search algorithm,nonlinear optimization,UNIRANDI method},
+}
+
+@Article{Mester2022,
+  author    = {Mester, Abigél and Zombori, Dániel and Pál, László and Bánhelyi, Balázs},
+  journal   = {Acta Polytechnica Hungarica},
+  title     = {Efficiency Improvement of the GLOBAL Optimization Method by Local Search Changes},
+  year      = {2022},
+  issn      = {2064-2687},
+  number    = {2},
+  pages     = {29--42},
+  volume    = {19},
+  abstract  = {There are many suitable global optimization approaches to find the minimum value
+of an objective function. In this paper, the improvement of the GLOBAL Optimization Method
+is studied, which is based on stochastic clustering. Through its three main components, which
+are sampling, clustering, and local search the algorithm aims to find the global minimum of
+the objective function. Local search methods significantly influence the efficiency of the
+GLOBAL method. The efficiency of our proposal may be improved by dividing the system
+into modules and by creating new variants of both the local and line search methods.
+The main contribution of this work is to show the achievements of modularization and the
+efficiency of the new variants of both local and line search methods.},
+  doi       = {10.12700/aph.19.2.2022.2.2},
+  keywords  = {GLOBAL,Optimization,Local search,Line search,Modular software},
+  publisher = {Obuda University},
+}
+
+@InProceedings{Pal2014,
+  author    = {Pal, Laszlo},
+  booktitle = {2014 IEEE 9th IEEE International Symposium on Applied Computational Intelligence and Informatics (SACI)},
+  title     = {Wireless sensor network localization using a multistage approach},
+  year      = {2014},
+  month     = may,
+  publisher = {IEEE},
+  abstract  = {Wireless sensor networks (WSN) are a collection of devices, capable of a limited amount of data processing and communication. The geographic location of sensor nodes is a basic input for many applications of wireless sensor networks. To determine the positions of sensors, numerous localization algorithms have been proposed recently. In this paper, we propose a multistage type localization scheme where trilateration, local search and simulated annealing are applied to determine the positions of the sensors. The performance in terms of localization error and function evaluation number is tested by simulations for different topologies and compared with a well-known simulated annealing method.},
+  doi       = {10.1109/saci.2014.6840071},
+  keywords  = {Simulated annealing,Wireless sensor networks,Network topology,Search methods},
+}
+
+@InProceedings{Pal2015,
+  author    = {Pal, Laszlo and Csendes, Tibor},
+  booktitle = {2015 IEEE 10th Jubilee International Symposium on Applied Computational Intelligence and Informatics},
+  title     = {An improved stochastic local search method in a multistart framework},
+  year      = {2015},
+  month     = may,
+  publisher = {IEEE},
+  abstract  = {UNIRANDI is a stochastic type, direct search method, where in each step a line search is started from the current point along a good random direction. In this paper we consider an improved version of this local search algorithm. The new method alters the random directions with new directions that rely on information from the previous stages of the optimization process. The improved algorithm was tested in a simple multistart framework and also as part of the GLOBAL method. The new local search technique is empirically compared with the old one on a unimodal and a multimodal function testbed up to moderate size dimensions.},
+  doi       = {10.1109/saci.2015.7208182},
+  keywords  = {Multistart,Direct search,Local search,Benchmarking},
+}
+
+@InProceedings{Pal2013,
+  author     = {Pál, László},
+  booktitle  = {Proceedings of the 15th annual conference companion on Genetic and evolutionary computation},
+  title      = {Comparison of multistart global optimization algorithms on the BBOB noiseless testbed},
+  year       = {2013},
+  month      = jul,
+  publisher  = {ACM},
+  series     = {GECCO ’13},
+  abstract   = {Multi Level Single Linkage is a multistart, stochastic global optimization method which relies on random sampling and local search. In this paper, we benchmarked three variants of the MLSL algorithm by using two gradient based and a derivative-free local search method on the noiseless function testbed. The three methods were also compared with a commercial multistart solver, called OQNLP (OptQuest/NLP).
+Our experiment showed that, the results may be influenced essentially by the applied local search procedure. Depending of the type of the problem the gradient based local search methods are faster in the initial stage of the optimization, while the derivative-free method show a superior performance in the final phase for moderate dimensions. Considering the percentage of the solved problems, OQNLP is similar or even better (for multi-modal and weakly structured functions) in 5-D than the MLSL method equipped with the gradient type local search methods, while on 20-D the latter algorithms are usually more faster.},
+  collection = {GECCO ’13},
+  doi        = {10.1145/2464576.2482693},
+}
+
+@InProceedings{Pal2013a,
+  author     = {Pál, László},
+  booktitle  = {Proceedings of the 15th annual conference companion on Genetic and evolutionary computation},
+  title      = {Benchmarking a hybrid multi level single linkagealgorithm on the bbob noiseless testbed},
+  year       = {2013},
+  month      = jul,
+  publisher  = {ACM},
+  series     = {GECCO ’13},
+  abstract   = {Multi Level Single Linkage (MLSL) is a well known stochastic global optimization method. In this paper, a new hybrid variant (HMLSL) of the MLSL algorithm is presented. The most important improvements are related to the sampling phase: the sample is generated from a Sobol quasi-random sequence and a few percent of the population is further improved by using crossover and mutation operators like in a traditional differential evolution (DE) method. The aim of this study is to evaluate the performance of the new HMLSL algorithm on the testbed of 24 noiseless functions. The new algorithm is also compared against a simple MLSL and a traditional DE in order to identify the benefits of the applied improvements.
+The results confirm that the HMLSL outperforms the MLSL and DE methods. The new method has a larger probability of success and usually is faster especially in the final stage of the optimization than the other two algorithms.},
+  collection = {GECCO ’13},
+  doi        = {10.1145/2464576.2482692},
+}
