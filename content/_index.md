@@ -60,7 +60,7 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: false
+        featured_only: true
     design:
       columns: '2'
       view: card
