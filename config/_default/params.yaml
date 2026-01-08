@@ -5,17 +5,17 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: light
+  color: blue
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'University of Szeged'
+    description: 'Dr. Pál László - Associate Professor in Global Optimization and Algorithm Analysis at the University of Szeged'
+    twitter: 'pallaszlo'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,17 +32,17 @@ header:
     enable: true
     blox: "navbar"
     fixed_to_top: true
-    show_search: true
+    show_search: false
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "Dr. Pál László"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Dr. Pál László. All rights reserved.'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false

@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Dr. László PÁL
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Pál László
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: László
+last_name: Pál
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🎓
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,92 +20,72 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Associate Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: University of Szeged, Department of Informatics
+    url: https://www.inf.u-szeged.hu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:pal.laszlo@inf.u-szeged.hu'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://scholar.google.com/citations?user=example
+  - icon: brands/github
+    url: https://github.com/pallaszlo
+  - icon: brands/twitter
+    url: https://twitter.com/pallaszlo
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Global Optimization Algorithms
+  - Stochastic Search Methods
+  - Multistart Algorithms
+  - UNIRANDI Local Search
+  - Algorithm Benchmarking
+  - Black-box Optimization
+  - Clustering Methods
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Habilitated Doctor in Computer Science
+    institution: University of Szeged
+    date_start: 2018-01-01
+    date_end: 2018-12-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Expertise in global optimization algorithms and computational mathematics
+  - area: PhD in Mathematics and Computer Science
+    institution: University of Szeged
+    date_start: 2005-01-01
+    date_end: 2008-12-31
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Dissertation on global optimization methods with applications to stochastic search algorithms
+  - area: MSc Applied Mathematics
+    institution: University of Szeged
+    date_start: 2002-01-01
+    date_end: 2004-12-31
     summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Focus on numerical methods and optimization theory
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: Associate Professor
+    company_name: University of Szeged, Department of Informatics
+    company_url: 'https://www.inf.u-szeged.hu/'
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2019-01-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Research and teaching in global optimization, algorithm analysis, and computational mathematics.
+      Leadership of optimization research group developing advanced stochastic search methods.
+  - position: Senior Research Fellow
+    company_name: University of Szeged
+    company_url: 'https://www.u-szeged.hu/'
+    company_logo: ''
+    date_start: 2008-01-01
+    date_end: 2018-12-31
+    summary: |
+      Development of GLOBAL and UNIRANDI algorithms, experimental evaluation of optimization methods
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -183,4 +163,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Dr. Pál László is an Associate Professor at the Department of Informatics, University of Szeged. His research focuses on global optimization algorithms, particularly the GLOBAL method and UNIRANDI local search techniques. He develops stochastic multistart methods for solving complex optimization problems and has extensive experience in algorithm benchmarking and performance evaluation. His work has been published in leading international journals and conferences on optimization, algorithms, and computational mathematics.

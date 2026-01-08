@@ -1,0 +1,205 @@
+{{/* Custom styles for single-page layout with sidebar design */}}
+<style>
+  /* Light, clean design for academic CV */
+  :root {
+    --color-primary: #2563eb;
+    --color-accent: #1e40af;
+    --color-light: #f8fafc;
+    --color-border: #e2e8f0;
+  }
+
+  /* Resume-biography section - sidebar styling */
+  .resume-biography-3 {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+    border-right: 1px solid var(--color-border);
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  /* Two-column layout for desktop */
+  @media (min-width: 1024px) {
+    body.single-page-layout {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 0;
+    }
+
+    .resume-biography-3 {
+      grid-column: 1;
+      grid-row: 1 / span 999;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    main, section {
+      grid-column: 2;
+    }
+  }
+
+  /* Mobile-first: sidebar becomes header on small screens */
+  @media (max-width: 1023px) {
+    .resume-biography-3 {
+      position: relative;
+      min-height: auto;
+      padding: 2rem 1.5rem;
+      border-right: none;
+      border-bottom: 2px solid var(--color-border);
+    }
+  }
+
+  /* Profile picture styling */
+  .resume-biography-3 .avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary);
+    margin: 0 auto 1.5rem;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  }
+
+  /* Name and title styling */
+  .resume-biography-3 h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .resume-biography-3 .role {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .resume-biography-3 .organizations {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .resume-biography-3 .organizations a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .resume-biography-3 .organizations a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  /* Social icons styling */
+  .resume-biography-3 .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  .resume-biography-3 .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--color-primary);
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .resume-biography-3 .social-icons a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.25);
+  }
+
+  /* Main content sections */
+  main section {
+    padding: 3rem 2.5rem;
+    max-width: 900px;
+  }
+
+  @media (max-width: 768px) {
+    main section {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  /* Section headings */
+  main section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  /* Publication list styling */
+  .publication-list {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .publication-item {
+    padding: 1.5rem;
+    border-left: 3px solid var(--color-primary);
+    background-color: #f8fafc;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .publication-item:hover {
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  }
+
+  .publication-item h3 {
+    margin-top: 0;
+    color: var(--color-accent);
+    font-size: 1.1rem;
+  }
+
+  .publication-item .authors {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: 0.5rem 0;
+  }
+
+  .publication-item .publication-date {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 500;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Navbar styling */
+  nav a {
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--color-primary);
+  }
+
+  /* Active link indication for anchor navigation */
+  nav a.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.25rem;
+  }
+</style>
