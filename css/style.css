@@ -70,8 +70,8 @@ body {
 }
 
 .profile-image {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto var(--spacing-md);
     border-radius: 50%;
     overflow: hidden;
@@ -83,7 +83,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 20%;
 }
 
 .sidebar h1 {
@@ -112,9 +112,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    margin: var(--spacing-md) 0;
-    padding-top: var(--spacing-sm);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+    padding-top: var(--spacing-md);
+    border-top: none;
 }
 
 .main-nav a {
@@ -147,8 +147,9 @@ body {
     justify-content: center;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-md);
-    padding-top: var(--spacing-sm);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social-links a {
