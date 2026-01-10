@@ -255,7 +255,7 @@ body {
 }
 
 .highlight-item i {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--accent-color);
     margin-top: 2px;
 }
@@ -264,12 +264,11 @@ body {
     display: block;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
-    font-size: 0.95rem;
 }
 
 .highlight-item p {
     margin-bottom: 0;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--text-light);
 }
 
@@ -289,7 +288,7 @@ body {
 
 .research-interests i {
     color: var(--accent-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Button Styles */
@@ -304,7 +303,7 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -314,10 +313,6 @@ body {
     background-color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.button i {
-    font-size: 0.9rem;
 }
 
 .cv-download {
@@ -452,7 +447,7 @@ body {
     padding: 0.4rem 0.8rem;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
@@ -484,7 +479,7 @@ body {
 
 .teaching-item h3 {
     margin-top: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
 }
 
@@ -504,7 +499,7 @@ body {
     background-color: var(--accent-color);
     color: white;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -529,7 +524,7 @@ body {
 }
 
 .contact-item i {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--accent-color);
     margin-top: 2px;
 }
@@ -538,12 +533,10 @@ body {
     display: block;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
-    font-size: 0.95rem;
 }
 
 .contact-item p {
     margin-bottom: 0;
-    font-size: 0.9rem;
     line-height: 1.5;
 }
 
@@ -564,7 +557,6 @@ body {
     background-color: var(--bg-light);
     border-left: 3px solid var(--accent-color);
     border-radius: 4px;
-    font-size: 0.9rem;
 }
 
 /* View All Button */
@@ -596,7 +588,7 @@ body {
 
 .software-item h3 {
     margin-top: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
 }
 
@@ -606,12 +598,12 @@ body {
 }
 
 .software-item p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-bottom: var(--spacing-sm);
 }
 
 .software-doi {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-light);
     font-family: monospace;
     margin-top: var(--spacing-xs);
