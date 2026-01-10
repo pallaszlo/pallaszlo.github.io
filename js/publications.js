@@ -98,8 +98,6 @@ function displayPublications() {
 
 function createPublicationHTML(pub) {
     const typeIcon = getTypeIcon(pub.type);
-    const featuredBadge = pub.featured ?
-        '<span style="color: #e74c3c; font-weight: 600; font-size: 0.85rem;"><i class="fas fa-star"></i> Featured</span>' : '';
 
     // Format authors with bold for László Pál
     const authors = formatAuthors(pub.authors);
@@ -148,7 +146,6 @@ function createPublicationHTML(pub) {
                 <span class="publication-year">
                     <i class="fas fa-calendar-alt"></i> ${pub.year}
                 </span>
-                ${featuredBadge}
             </div>
             ${links.length > 0 ? `
             <div class="publication-links">
