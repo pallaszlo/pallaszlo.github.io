@@ -1,0 +1,117 @@
+[
+    {
+        "title": "Comparing procedures for estimating random coefficient logit demand models with a special focus on obtaining global optima",
+        "authors": "László Pál, Zsolt Sándor",
+        "year": 2023,
+        "venue": "International Journal of Industrial Organization",
+        "type": "journal",
+        "doi": "10.1016/j.ijindorg.2023.102950",
+        "featured": true
+    },
+    {
+        "title": "Efficient numerical methods for the optimisation of large kinetic reaction mechanisms",
+        "authors": "Simret Kidane Goitom, Máté Papp, Márton Kovács, Tibor Nagy, István Gy. Zsély, Tamás Turányi, László Pál",
+        "year": 2022,
+        "venue": "Combustion Theory and Modelling",
+        "type": "journal",
+        "doi": "10.1080/13647830.2022.2110945"
+    },
+    {
+        "title": "Asset Allocation Strategies Using Covariance Matrix Estimators",
+        "authors": "László Pál",
+        "year": 2022,
+        "venue": "Acta Universitatis Sapientiae, Economics and Business",
+        "type": "journal",
+        "doi": "10.2478/auseb-2022-0008"
+    },
+    {
+        "title": "Efficiency Improvement of the GLOBAL Optimization Method by Local Search Changes",
+        "authors": "Abigél Mester, Dániel Zombori, László Pál, Balázs Bánhelyi",
+        "year": 2022,
+        "venue": "Acta Polytechnica Hungarica",
+        "type": "journal",
+        "doi": "10.12700/aph.19.2.2022.2.2"
+    },
+    {
+        "title": "The GLOBAL Optimization Algorithm: Newly Updated with Java Implementation and Parallelization",
+        "authors": "Balázs Bánhelyi, Tibor Csendes, Balázs Lévai, László Pál, Dániel Zombori",
+        "year": 2018,
+        "venue": "SpringerBriefs in Optimization",
+        "type": "book",
+        "doi": "10.1007/978-3-030-02375-1",
+        "featured": true
+    },
+    {
+        "title": "Empirical study of the improved UNIRANDI local search method",
+        "authors": "László Pál",
+        "year": 2017,
+        "venue": "Central European Journal of Operations Research",
+        "type": "journal",
+        "doi": "10.1007/s10100-017-0470-2"
+    },
+    {
+        "title": "An improved stochastic local search method in a multistart framework",
+        "authors": "László Pál, Tibor Csendes",
+        "year": 2015,
+        "venue": "IEEE 10th Jubilee International Symposium on Applied Computational Intelligence and Informatics",
+        "type": "conference",
+        "doi": "10.1109/saci.2015.7208182"
+    },
+    {
+        "title": "Wireless sensor network localization using a multistage approach",
+        "authors": "László Pál",
+        "year": 2014,
+        "venue": "IEEE 9th International Symposium on Applied Computational Intelligence and Informatics",
+        "type": "conference",
+        "doi": "10.1109/saci.2014.6840071"
+    },
+    {
+        "title": "Comparison of multistart global optimization algorithms on the BBOB noiseless testbed",
+        "authors": "László Pál",
+        "year": 2013,
+        "venue": "Proceedings of GECCO '13",
+        "type": "conference",
+        "doi": "10.1145/2464576.2482693"
+    },
+    {
+        "title": "Benchmarking a hybrid multi level single linkage algorithm on the bbob noiseless testbed",
+        "authors": "László Pál",
+        "year": 2013,
+        "venue": "Proceedings of GECCO '13",
+        "type": "conference",
+        "doi": "10.1145/2464576.2482692"
+    },
+    {
+        "title": "Black Box Optimization Benchmarking of the GLOBAL Method",
+        "authors": "László Pál, Tibor Csendes, Mihály Csaba Markót, Arnold Neumaier",
+        "year": 2012,
+        "venue": "Evolutionary Computation",
+        "type": "journal",
+        "doi": "10.1162/EVCO_a_00089",
+        "featured": true
+    },
+    {
+        "title": "A Comparison of Global Search Algorithms for Continuous Black Box Optimization",
+        "authors": "Petr Pošík, Waltraud Huyer, László Pál",
+        "year": 2012,
+        "venue": "Evolutionary Computation",
+        "type": "journal",
+        "doi": "10.1162/EVCO_a_00084"
+    },
+    {
+        "title": "INTLAB implementation of an interval global optimization algorithm",
+        "authors": "László Pál, Tibor Csendes",
+        "year": 2009,
+        "venue": "Optimization Methods and Software",
+        "type": "journal",
+        "doi": "10.1080/10556780902753395"
+    },
+    {
+        "title": "The GLOBAL optimization method revisited",
+        "authors": "Tibor Csendes, László Pál, J. Oscar H. Sendín, Julio R. Banga",
+        "year": 2007,
+        "venue": "Optimization Letters",
+        "type": "journal",
+        "doi": "10.1007/s11590-007-0072-3"
+    }
+]

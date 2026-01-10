@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>László Pál - Academic Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Fixed Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="profile-image">
+                <!-- Add your photo here -->
+                <div class="placeholder-image">LP</div>
+            </div>
+            <h1>László Pál</h1>
+            <p class="title">Researcher in Optimization</p>
+            
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#research">Research</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" title="Email">✉️</a>
+                <a href="https://scholar.google.com/your-profile" title="Google Scholar" target="_blank">🎓</a>
+                <a href="https://github.com/yourusername" title="GitHub" target="_blank">💻</a>
+                <a href="https://orcid.org/your-orcid" title="ORCID" target="_blank">🆔</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>
+                I am a researcher specializing in global optimization algorithms, with a particular focus on 
+                stochastic methods and local search techniques. My work includes the development and improvement 
+                of the GLOBAL optimization method and the UNIRANDI local search algorithm.
+            </p>
+            <p>
+                My research interests include:
+            </p>
+            <ul>
+                <li>Global optimization and stochastic methods</li>
+                <li>Multi-start algorithms and clustering techniques</li>
+                <li>Local search methods and derivative-free optimization</li>
+                <li>Applications in economics and industrial engineering</li>
+            </ul>
+            
+            <div class="cv-download">
+                <a href="assets/cv.pdf" class="button" download>Download CV (PDF)</a>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <h2>Selected Publications</h2>
+            <div id="publications-list">
+                <!-- Publications will be loaded here by JavaScript -->
+                <p>Loading publications...</p>
+            </div>
+            <div class="view-all">
+                <button class="button" onclick="toggleAllPublications()">View All Publications</button>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research Highlights</h2>
+            
+            <div class="research-item">
+                <h3>GLOBAL Optimization Method</h3>
+                <p>
+                    A multi-start type stochastic method for bound-constrained global optimization problems. 
+                    The method combines sampling, clustering, and local search to efficiently find global minima.
+                </p>
+            </div>
+
+            <div class="research-item">
+                <h3>UNIRANDI Local Search</h3>
+                <p>
+                    A stochastic local search algorithm that performs line searches along promising random directions. 
+                    The improved version incorporates information from previous optimization stages.
+                </p>
+            </div>
+
+            <div class="research-item">
+                <h3>Applications</h3>
+                <p>
+                    My optimization methods have been applied to various fields including:
+                </p>
+                <ul>
+                    <li>Random coefficient logit demand models in economics</li>
+                    <li>Combustion mechanism optimization</li>
+                    <li>Portfolio optimization strategies</li>
+                    <li>Wireless sensor network localization</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>
+                <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </p>
+            <p>
+                <strong>Office:</strong> Your Office Location
+            </p>
+            <p>
+                Feel free to reach out regarding research collaboration, questions about my work, 
+                or opportunities.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 László Pál. Last updated: January 2025.</p>
+        </footer>
+    </main>
+
+    <script src="js/publications.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
