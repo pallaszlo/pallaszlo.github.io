@@ -36,21 +36,21 @@ function displayPublications() {
 
     // Books
     html += `<div class="publications-category">
-        <h3><i class="fas fa-book"></i> Books (${allBooks.length})</h3>
+        <h3><i class="fas fa-book"></i> Books</h3>
         ${allBooks.map(pub => createBookHTML(pub)).join('')}
     </div>`;
 
     // Journal Articles
     const journalsToShow = showingAll ? allJournalArticles : allJournalArticles.slice(0, MAX_INITIAL_PUBLICATIONS);
     html += `<div class="publications-category">
-        <h3><i class="fas fa-file-alt"></i> Journal Articles (${allJournalArticles.length})</h3>
+        <h3><i class="fas fa-file-alt"></i> Journal Articles</h3>
         ${journalsToShow.map(pub => createArticleHTML(pub)).join('')}
     </div>`;
 
     // Conference Papers
     const conferencesToShow = showingAll ? allConferencePapers : allConferencePapers.slice(0, MAX_INITIAL_PUBLICATIONS);
     html += `<div class="publications-category">
-        <h3><i class="fas fa-users"></i> Conference Papers (${allConferencePapers.length})</h3>
+        <h3><i class="fas fa-users"></i> Conference Papers</h3>
         ${conferencesToShow.map(pub => createArticleHTML(pub)).join('')}
     </div>`;
 

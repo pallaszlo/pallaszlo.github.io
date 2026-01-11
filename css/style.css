@@ -426,6 +426,7 @@ body {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
     border-bottom: 1px solid var(--border-color);
+    /* transition: background-color 0.3s ease; */
 }
 
 .research-item:last-child {
@@ -482,13 +483,13 @@ body {
     background-color: var(--bg-light);
     border-radius: 8px;
     border-top: 3px solid var(--accent-color);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
-.teaching-item:hover {
+/* .teaching-item:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
-}
+} */
 
 .teaching-item h3 {
     margin-top: 0;
@@ -591,13 +592,13 @@ body {
     background-color: var(--bg-light);
     border-radius: 8px;
     border-top: 3px solid var(--accent-color);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
-.software-item:hover {
+/* .software-item:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
-}
+} */
 
 .software-item h3 {
     margin-top: 0;
@@ -682,6 +683,45 @@ footer {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.scroll-top-btn:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-top-btn.show {
+    display: flex;
+}
+
+/* Scroll to top button only on mobile */
+@media (min-width: 968px) {
+    .scroll-top-btn {
+        display: none !important;
+    }
 }
 
 /* Link Styles */
