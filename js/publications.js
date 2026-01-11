@@ -62,16 +62,14 @@ function displayPublications() {
 function createBookHTML(pub) {
     return `
         <div class="publication-item">
-            <div class="publication-header">
-                <div class="publication-title">${pub.title}</div>
-                <div class="publication-year-doi">
-                    <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
-                    ${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener" class="doi-link"><i class="fas fa-link"></i> DOI</a>` : ''}
-                </div>
-            </div>
+            <div class="publication-title">${pub.title}</div>
             <div class="publication-authors">${formatAuthors(pub.authors)}</div>
             <div class="publication-venue">
                 ${pub.publisher}${pub.isbn ? `, ISBN: ${pub.isbn}` : ''}
+            </div>
+            <div class="publication-meta">
+                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
+                ${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener" class="doi-link"><i class="fas fa-link"></i> DOI</a>` : ''}
             </div>
         </div>
     `;
@@ -80,17 +78,15 @@ function createBookHTML(pub) {
 function createArticleHTML(pub) {
     return `
         <div class="publication-item">
-            <div class="publication-header">
-                <div class="publication-title">${pub.title}</div>
-                <div class="publication-year-doi">
-                    <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
-                    ${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener" class="doi-link"><i class="fas fa-link"></i> DOI</a>` : ''}
-                </div>
-            </div>
+            <div class="publication-title">${pub.title}</div>
             <div class="publication-authors">${formatAuthors(pub.authors)}</div>
             <div class="publication-venue">
                 <i class="fas fa-book-open" style="font-size: 0.8rem; margin-right: 4px;"></i>
                 ${pub.venue}${pub.volume ? `, ${pub.volume}` : ''}${pub.pages ? `, pp. ${pub.pages}` : ''}
+            </div>
+            <div class="publication-meta">
+                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
+                ${pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener" class="doi-link"><i class="fas fa-link"></i> DOI</a>` : ''}
             </div>
         </div>
     `;
