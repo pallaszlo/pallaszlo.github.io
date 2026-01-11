@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="László Pál - Associate Professor at Sapientia Hungarian University of Transylvania, researcher in global optimization and stochastic methods">
-    <meta name="keywords" content="László Pál, optimization, GLOBAL, UNIRANDI, research, Sapientia">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title>László Pál - Associate Professor | Optimization Algorithms</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="László Pál, Associate Professor at Sapientia Hungarian University of Transylvania. Research in global optimization algorithms, GLOBAL method, UNIRANDI, and stochastic optimization.">
+    <meta name="keywords" content="László Pál, optimization algorithms, global optimization, GLOBAL method, UNIRANDI, stochastic optimization, Sapientia University">
     <meta name="author" content="László Pál">
-    <title>László Pál - Academic Website</title>
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pallaszlo.github.io/">
+    <meta property="og:title" content="László Pál - Associate Professor">
+    <meta property="og:description" content="Research in global optimization algorithms, GLOBAL method, and stochastic optimization techniques.">
+    <meta property="og:image" content="https://pallaszlo.github.io/assets/images/profile_small.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://pallaszlo.github.io/">
+    <meta property="twitter:title" content="László Pál - Associate Professor">
+    <meta property="twitter:description" content="Research in global optimization algorithms and stochastic methods.">
+    <meta property="twitter:image" content="https://pallaszlo.github.io/assets/images/profile_small.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pallaszlo.github.io/">
+
+    <!-- Google Search Console Verification (add meg később!) -->
+    <!-- <meta name="google-site-verification" content="your-verification-code"> -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Analytics - Uncomment and add your GA ID -->
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    -->
 </head>
 <body>
     <!-- Fixed Sidebar -->
@@ -230,37 +253,37 @@
 
         <section id="teaching" class="section">
             <h2>Teaching</h2>
-            <p>
-                I teach courses in computer science and optimization at both undergraduate and graduate levels 
-                at Sapientia Hungarian University of Transylvania.
+            <p class="section-intro">
+                I teach courses in programming, web development, and optimization at both undergraduate and graduate levels.
             </p>
-            
+
             <div class="teaching-grid">
                 <div class="teaching-item">
                     <h3><i class="fas fa-code"></i> Web Technologies</h3>
-                    <p>Comprehensive course covering modern web development, including HTML5, CSS3, JavaScript,
-                       and server-side programming.</p>
-                    <span class="course-level">Undergraduate - Semester IV</span>
-                </div>
-
-                <div class="teaching-item">
-                    <h3><i class="fas fa-globe"></i> Web Programming</h3>
-                    <p>Advanced web development focusing on dynamic websites, databases, and modern frameworks.</p>
+                    <p>Fundamentals of modern web development covering HTML5, CSS3, JavaScript basics,
+                       and responsive web design principles.</p>
                     <span class="course-level">Undergraduate</span>
                 </div>
 
                 <div class="teaching-item">
                     <h3><i class="fab fa-java"></i> Java Programming</h3>
-                    <p>Object-oriented programming with Java, covering fundamentals, data structures,
-                       and application development.</p>
-                    <span class="course-level">Undergraduate - Semester IV</span>
+                    <p>Comprehensive Java course covering language fundamentals, object-oriented programming,
+                       file handling, network programming, and basic concurrent programming concepts.</p>
+                    <span class="course-level">Undergraduate</span>
+                </div>
+
+                <div class="teaching-item">
+                    <h3><i class="fab fa-php"></i> Web Programming</h3>
+                    <p>Server-side web development with PHP: language elements, OOP, form handling,
+                       sessions and cookies, database integration, REST APIs, and MVC architecture.</p>
+                    <span class="course-level">Undergraduate</span>
                 </div>
 
                 <div class="teaching-item">
                     <h3><i class="fas fa-graduation-cap"></i> Bachelor's Thesis Projects</h3>
-                    <p>Supervision of bachelor's thesis projects in optimization algorithms, web development,
-                       and data analysis.</p>
-                    <span class="course-level">Undergraduate - Final Year</span>
+                    <p>Supervision of undergraduate thesis projects in optimization algorithms,
+                       web development, and data analysis. Guidance on thesis structure and academic writing.</p>
+                    <span class="course-level">Final Year</span>
                 </div>
             </div>
             
@@ -325,6 +348,38 @@
     <button id="scrollToTop" class="scroll-top-btn" onclick="scrollToTop()" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "László Pál",
+        "jobTitle": "Associate Professor",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Sapientia Hungarian University of Transylvania"
+        },
+        "url": "https://pallaszlo.github.io",
+        "image": "https://pallaszlo.github.io/assets/images/profile_small.jpg",
+        "sameAs": [
+            "https://scholar.google.com/citations?user=nDlGWqsAAAAJ&hl=en",
+            "https://www.linkedin.com/in/l%C3%A1szl%C3%B3-p%C3%A1l-b04ba25a/",
+            "https://github.com/pallaszlo",
+            "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10026711"
+        ],
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "University of Szeged"
+        },
+        "knowsAbout": [
+            "Global Optimization",
+            "Stochastic Methods",
+            "GLOBAL Algorithm",
+            "UNIRANDI Method"
+        ]
+    }
+    </script>
 
     <script src="js/main.js"></script>
     <script src="js/publications.js"></script>

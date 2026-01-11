@@ -149,6 +149,57 @@ This site uses:
 - ❌ No build tools
 - ❌ No package managers
 
+## 📊 Google Analytics Setup
+
+### Getting Started
+
+1. Go to https://analytics.google.com
+2. Create a new property for your website
+3. Get your Measurement ID (format: `G-XXXXXXXXXX`)
+
+### Activation
+
+1. Open `index.html`
+2. Find this line in the `<head>` section:
+   ```html
+   gtag('config', 'G-XXXXXXXXXX');
+   ```
+3. Replace `G-XXXXXXXXXX` with your actual Measurement ID
+4. Commit and push changes:
+   ```bash
+   git add index.html
+   git commit -m "Add Google Analytics Measurement ID"
+   git push origin main
+   ```
+5. Wait 24-48 hours for data to appear in Google Analytics
+
+## 🔍 Google Search Console Setup (Optional)
+
+### Verification
+
+1. Go to https://search.google.com/search-console
+2. Click "Add property"
+3. Enter: https://pallaszlo.github.io
+4. Choose "HTML tag" verification method
+5. Copy the verification meta tag
+6. Add it to `index.html` in the `<head>` section:
+   ```html
+   <meta name="google-site-verification" content="your-verification-code">
+   ```
+7. Uncomment and replace the placeholder in the existing comment:
+   ```html
+   <!-- <meta name="google-site-verification" content="your-verification-code"> -->
+   ```
+8. Complete verification in Google Search Console
+9. Submit `sitemap.xml` URL when requested
+
+### Benefits
+
+- Monitor search performance
+- Understand how Google crawls your site
+- Fix indexing issues
+- View search queries and click-through rates
+
 ## 📄 License
 
 Feel free to use this template for your own academic website.
