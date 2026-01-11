@@ -61,41 +61,46 @@ function displayPublications() {
 
 function createBookHTML(pub) {
     return `
-        <div class="publication-item">
-            <div class="publication-title">${pub.title}</div>
-            <div class="publication-authors">${formatAuthors(pub.authors)}</div>
-            <div class="publication-venue">
-                ${pub.publisher}${pub.isbn ? `, ISBN: ${pub.isbn}` : ''}
+        <div class="pub-compact-v2">
+            <div class="pub-header">
+                <span class="pub-icon">📕</span>
+                <span class="pub-title">${pub.title}</span>
             </div>
-            <div class="publication-meta">
-                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
+            <div class="pub-footer">
+                <span class="pub-authors">${formatAuthors(pub.authors)}</span>
+                <span class="pub-divider">·</span>
+                <span class="pub-venue">${pub.publisher}</span>
+                <span class="pub-divider">·</span>
+                <span class="pub-year">${pub.year}</span>
+                ${pub.doi ? `<span class="pub-divider">·</span><a href="https://doi.org/${pub.doi}" class="pub-action" target="_blank" rel="noopener">DOI ↗</a>` : ''}
             </div>
-            ${pub.doi ? `<div class="publication-links">
-                <a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener"><i class="fas fa-link"></i> DOI</a>
-            </div>` : ''}
         </div>
     `;
 }
 
 function createArticleHTML(pub) {
+    const icon = pub.venue && pub.venue.includes('Conference') ? '📄' : '📰';
     const links = [];
     if (pub.doi) {
-        links.push(`<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener"><i class="fas fa-link"></i> DOI</a>`);
+        links.push(`<a href="https://doi.org/${pub.doi}" class="pub-action" target="_blank" rel="noopener">DOI ↗</a>`);
     }
-    links.push(`<a href="https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>`);
+    links.push(`<a href="https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}" class="pub-action" target="_blank" rel="noopener">Scholar ↗</a>`);
 
     return `
-        <div class="publication-item">
-            <div class="publication-title">${pub.title}</div>
-            <div class="publication-authors">${formatAuthors(pub.authors)}</div>
-            <div class="publication-venue">
-                <i class="fas fa-book-open" style="font-size: 0.8rem; margin-right: 4px;"></i>
-                ${pub.venue}${pub.volume ? `, ${pub.volume}` : ''}${pub.pages ? `, pp. ${pub.pages}` : ''}
+        <div class="pub-compact-v2">
+            <div class="pub-header">
+                <span class="pub-icon">${icon}</span>
+                <span class="pub-title">${pub.title}</span>
             </div>
-            <div class="publication-meta">
-                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
+            <div class="pub-footer">
+                <span class="pub-authors">${formatAuthors(pub.authors)}</span>
+                <span class="pub-divider">·</span>
+                <span class="pub-venue">${pub.venue}${pub.volume ? `, ${pub.volume}` : ''}</span>
+                <span class="pub-divider">·</span>
+                <span class="pub-year">${pub.year}</span>
+                <span class="pub-divider">·</span>
+                ${links.join('<span class="pub-divider">·</span>')}
             </div>
-            <div class="publication-links">${links.join('')}</div>
         </div>
     `;
 }
