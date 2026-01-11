@@ -1,187 +1,116 @@
-// Publications management
-let allPublications = [];
+let allBooks = [];
+let allJournalArticles = [];
+let allConferencePapers = [];
 let showingAll = false;
 const MAX_INITIAL_PUBLICATIONS = 5;
 
-// Load publications on page load
 document.addEventListener('DOMContentLoaded', loadPublications);
 
 async function loadPublications() {
     try {
-        const response = await fetch('data/publications.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        const [booksRes, journalsRes, conferencesRes] = await Promise.all([
+            fetch('data/books.json'),
+            fetch('data/journal_articles.json'),
+            fetch('data/conference_papers.json')
+        ]);
 
-        const data = await response.json();
-        console.log('Loaded data:', data);
+        allBooks = await booksRes.json();
+        allJournalArticles = await journalsRes.json();
+        allConferencePapers = await conferencesRes.json();
 
-        // Convert category-based structure to flat array with type info
-        const books = (data.books || []).map(pub => ({ ...pub, type: 'book', pubType: 'Books' }));
-        const journals = (data.journal_articles || []).map(pub => ({ ...pub, type: 'journal', pubType: 'Journal Articles' }));
-        const conferences = (data.conference_papers || []).map(pub => ({ ...pub, type: 'conference', pubType: 'Conference Papers' }));
-
-        allPublications = [...books, ...journals, ...conferences];
-
-        console.log('Total publications loaded:', allPublications.length);
-
-        // Sort by year (descending), then by featured status
-        allPublications.sort((a, b) => {
-            if (b.year !== a.year) return b.year - a.year;
-            if (b.featured && !a.featured) return 1;
-            if (!b.featured && a.featured) return -1;
-            return 0;
-        });
+        allJournalArticles.sort((a, b) => b.year - a.year);
+        allConferencePapers.sort((a, b) => b.year - a.year);
 
         displayPublications();
     } catch (error) {
         console.error('Error loading publications:', error);
-        const pubList = document.getElementById('publications-list');
-        if (pubList) {
-            pubList.innerHTML =
-                '<p class="error">Error loading publications: ' + error.message + '</p>';
-        }
+        document.getElementById('publications-list').innerHTML =
+            '<p class="error">Error loading publications.</p>';
     }
 }
 
 function displayPublications() {
     const container = document.getElementById('publications-list');
 
-    if (allPublications.length === 0) {
-        container.innerHTML = '<p>No publications found.</p>';
-        return;
-    }
-
-    const publicationsToShow = showingAll ? allPublications : allPublications.slice(0, MAX_INITIAL_PUBLICATIONS);
-
-    // Group by type if not showing all (for better organization when showing selected items)
     let html = '';
 
-    if (showingAll) {
-        // Show all grouped by category
-        const books = allPublications.filter(p => p.type === 'book');
-        const journals = allPublications.filter(p => p.type === 'journal');
-        const conferences = allPublications.filter(p => p.type === 'conference');
+    // Books
+    html += `<div class="publications-category">
+        <h3><i class="fas fa-book"></i> Books (${allBooks.length})</h3>
+        ${allBooks.map(pub => createBookHTML(pub)).join('')}
+    </div>`;
 
-        if (books.length > 0) {
-            html += '<h3><i class="fas fa-book"></i> Books</h3>';
-            html += books.map(pub => createPublicationHTML(pub)).join('');
-        }
+    // Journal Articles
+    const journalsToShow = showingAll ? allJournalArticles : allJournalArticles.slice(0, MAX_INITIAL_PUBLICATIONS);
+    html += `<div class="publications-category">
+        <h3><i class="fas fa-file-alt"></i> Journal Articles (${allJournalArticles.length})</h3>
+        ${journalsToShow.map(pub => createArticleHTML(pub)).join('')}
+    </div>`;
 
-        if (journals.length > 0) {
-            html += '<h3><i class="fas fa-file-alt"></i> Journal Articles</h3>';
-            html += journals.map(pub => createPublicationHTML(pub)).join('');
-        }
-
-        if (conferences.length > 0) {
-            html += '<h3><i class="fas fa-users"></i> Conference Papers</h3>';
-            html += conferences.map(pub => createPublicationHTML(pub)).join('');
-        }
-    } else {
-        // Show selected items without grouping
-        html = publicationsToShow.map(pub => createPublicationHTML(pub)).join('');
-    }
+    // Conference Papers
+    const conferencesToShow = showingAll ? allConferencePapers : allConferencePapers.slice(0, MAX_INITIAL_PUBLICATIONS);
+    html += `<div class="publications-category">
+        <h3><i class="fas fa-users"></i> Conference Papers (${allConferencePapers.length})</h3>
+        ${conferencesToShow.map(pub => createArticleHTML(pub)).join('')}
+    </div>`;
 
     container.innerHTML = html;
 
-    // Update button text
-    const button = document.querySelector('.view-all .button');
-    if (button) {
-        const remaining = allPublications.length - MAX_INITIAL_PUBLICATIONS;
-        if (!showingAll && remaining > 0) {
-            button.innerHTML = `<i class="fas fa-list"></i> Show ${remaining} More Publications`;
-        } else {
-            button.innerHTML = `<i class="fas fa-list"></i> Show Less`;
-        }
-    }
+    updateButton();
 }
 
-function createPublicationHTML(pub) {
-    const typeIcon = getTypeIcon(pub.type);
+function createBookHTML(pub) {
+    return `
+        <div class="publication-item">
+            <div class="publication-title">${pub.title}</div>
+            <div class="publication-authors">${formatAuthors(pub.authors)}</div>
+            <div class="publication-venue">
+                ${pub.publisher}${pub.isbn ? `, ISBN: ${pub.isbn}` : ''}
+            </div>
+            <div class="publication-meta">
+                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
+            </div>
+            ${pub.doi ? `<div class="publication-links">
+                <a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener"><i class="fas fa-link"></i> DOI</a>
+            </div>` : ''}
+        </div>
+    `;
+}
 
-    // Format authors with bold for László Pál
-    const authors = formatAuthors(pub.authors);
-
-    // Build links
+function createArticleHTML(pub) {
     const links = [];
     if (pub.doi) {
         links.push(`<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener"><i class="fas fa-link"></i> DOI</a>`);
     }
-    if (pub.pdf) {
-        links.push(`<a href="${pub.pdf}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>`);
-    }
-    // Always add Google Scholar link
     links.push(`<a href="https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>`);
-
-    // Build venue information
-    let venueHTML = '';
-    if (pub.venue) {
-        let venueText = pub.venue;
-        if (pub.volume) {
-            venueText += `, Vol. ${pub.volume}`;
-        }
-        if (pub.pages) {
-            venueText += `, pp. ${pub.pages}`;
-        }
-        venueHTML = `<div class="publication-venue"><i class="fas fa-book-open" style="font-size: 0.8rem; margin-right: 4px;"></i>${venueText}</div>`;
-    }
-
-    // For books, show publisher instead of venue
-    let publisherHTML = '';
-    if (pub.publisher) {
-        publisherHTML = `<div class="publication-venue"><i class="fas fa-building" style="font-size: 0.8rem; margin-right: 4px;"></i>${pub.publisher}, ${pub.year}</div>`;
-    }
 
     return `
         <div class="publication-item">
-            <div class="publication-title">
-                ${typeIcon} ${pub.title}
+            <div class="publication-title">${pub.title}</div>
+            <div class="publication-authors">${formatAuthors(pub.authors)}</div>
+            <div class="publication-venue">
+                <i class="fas fa-book-open" style="font-size: 0.8rem; margin-right: 4px;"></i>
+                ${pub.venue}${pub.volume ? `, ${pub.volume}` : ''}${pub.pages ? `, pp. ${pub.pages}` : ''}
             </div>
-            <div class="publication-authors">
-                ${authors}
-            </div>
-            ${venueHTML}
-            ${publisherHTML}
             <div class="publication-meta">
-                <span class="publication-year">
-                    <i class="fas fa-calendar-alt"></i> ${pub.year}
-                </span>
+                <span class="publication-year"><i class="fas fa-calendar-alt"></i> ${pub.year}</span>
             </div>
-            ${links.length > 0 ? `
-            <div class="publication-links">
-                ${links.join('')}
-            </div>
-            ` : ''}
+            <div class="publication-links">${links.join('')}</div>
         </div>
     `;
 }
 
 function formatAuthors(authors) {
-    // Bold László Pál's name in various formats
     return authors
+        .replace(/Pál, L\./g, '<strong>Pál, L.</strong>')
         .replace(/László Pál/g, '<strong>László Pál</strong>')
-        .replace(/Pál, László/g, '<strong>Pál, László</strong>')
-        .replace(/L\. Pál/g, '<strong>L. Pál</strong>')
-        .replace(/Pál L\./g, '<strong>Pál L.</strong>')
-        .replace(/László, P\./g, '<strong>László, P.</strong>')
-        .replace(/L\.? Pál/g, '<strong>L. Pál</strong>');
-}
-
-function getTypeIcon(type) {
-    const icons = {
-        'journal': '<i class="fas fa-file-alt"></i>',
-        'conference': '<i class="fas fa-users"></i>',
-        'book': '<i class="fas fa-book"></i>',
-        'preprint': '<i class="fas fa-file-alt"></i>'
-    };
-    return icons[type] || '<i class="fas fa-file-alt"></i>';
+        .replace(/L\. Pál/g, '<strong>L. Pál</strong>');
 }
 
 function toggleAllPublications() {
     showingAll = !showingAll;
     displayPublications();
 
-    // Scroll to publications section if expanding
     if (showingAll) {
         document.getElementById('publications').scrollIntoView({
             behavior: 'smooth',
@@ -190,40 +119,15 @@ function toggleAllPublications() {
     }
 }
 
-// Search functionality (for future enhancement)
-function searchPublications(query) {
-    const lowerQuery = query.toLowerCase();
-    return allPublications.filter(pub =>
-        pub.title.toLowerCase().includes(lowerQuery) ||
-        pub.authors.toLowerCase().includes(lowerQuery) ||
-        pub.venue.toLowerCase().includes(lowerQuery) ||
-        (pub.publisher && pub.publisher.toLowerCase().includes(lowerQuery)) ||
-        pub.year.toString().includes(lowerQuery)
-    );
-}
-
-// Group publications by year (for alternative display)
-function groupByYear(publications) {
-    return publications.reduce((groups, pub) => {
-        const year = pub.year;
-        if (!groups[year]) {
-            groups[year] = [];
+function updateButton() {
+    const button = document.querySelector('.view-all .button');
+    if (button) {
+        const totalHidden = (allJournalArticles.length - MAX_INITIAL_PUBLICATIONS) +
+                           (allConferencePapers.length - MAX_INITIAL_PUBLICATIONS);
+        if (!showingAll && totalHidden > 0) {
+            button.innerHTML = `<i class="fas fa-list"></i> Show ${totalHidden} More Publications`;
+        } else {
+            button.innerHTML = `<i class="fas fa-list"></i> Show Less`;
         }
-        groups[year].push(pub);
-        return groups;
-    }, {});
+    }
 }
-
-// Get publications by type
-function getPublicationsByType(type) {
-    return allPublications.filter(pub => pub.type === type);
-}
-
-// Export for potential external use
-window.publicationsAPI = {
-    search: searchPublications,
-    groupByYear: groupByYear,
-    getByType: getPublicationsByType,
-    getAll: () => allPublications,
-    refresh: loadPublications
-};

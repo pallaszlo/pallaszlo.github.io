@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Comparing procedures for estimating random coefficient logit demand models with a special focus on obtaining global optima",
+    "authors": "Pál, L., & Sándor, Z.",
+    "year": 2023,
+    "venue": "International Journal of Industrial Organization",
+    "volume": "88",
+    "pages": "102950",
+    "doi": "10.1016/j.ijindorg.2023.102950"
+  },
+  {
+    "title": "Efficient numerical methods for the optimisation of large kinetic reaction mechanisms",
+    "authors": "Goitom, S. K., Papp, M., Kovács, M., Nagy, T., Zsély, I. G., Turányi, T., & Pál, L.",
+    "year": 2022,
+    "venue": "Combustion Theory and Modelling",
+    "volume": "26(6)",
+    "pages": "1071–1097",
+    "doi": "10.1080/13647830.2022.2110945"
+  },
+  {
+    "title": "Efficiency Improvement of the GLOBAL Optimization Method by Local Search Changes",
+    "authors": "Mester, A., Zombori, D., Pál, L., & Bánhelyi, B.",
+    "year": 2022,
+    "venue": "Acta Polytechnica Hungarica",
+    "volume": "19(2)",
+    "pages": "29–42",
+    "doi": "10.12700/aph.19.2.2022.2.2"
+  },
+  {
+    "title": "Asset Allocation Strategies Using Covariance Matrix Estimators",
+    "authors": "Pál, L.",
+    "year": 2022,
+    "venue": "Acta Universitatis Sapientiae, Economics and Business",
+    "volume": "10(1)",
+    "pages": "133–144",
+    "doi": "10.2478/auseb-2022-0008"
+  },
+  {
+    "title": "Empirical study of the improved UNIRANDI local search method",
+    "authors": "Pál, L.",
+    "year": 2017,
+    "venue": "Central European Journal of Operations Research",
+    "volume": "25(4)",
+    "pages": "929–952",
+    "doi": "10.1007/s10100-017-0470-2"
+  },
+  {
+    "title": "Black Box Optimization Benchmarking of the GLOBAL Method",
+    "authors": "Pál, L., Csendes, T., Markót, M. C., & Neumaier, A.",
+    "year": 2012,
+    "venue": "Evolutionary Computation",
+    "volume": "20(4)",
+    "pages": "609–639",
+    "doi": "10.1162/EVCO_a_00089"
+  },
+  {
+    "title": "A Comparison of Global Search Algorithms for Continuous Black Box Optimization",
+    "authors": "Pošík, P., Huyer, W., & Pál, L.",
+    "year": 2012,
+    "venue": "Evolutionary Computation",
+    "volume": "20",
+    "pages": "509–541",
+    "doi": "10.1162/EVCO_a_00084"
+  },
+  {
+    "title": "An interval based global optimization method and its application to sensor localization",
+    "authors": "Pál, L., & Csendes, T.",
+    "year": 2011,
+    "venue": "Alkalmazott Matematikai Lapok",
+    "volume": "28",
+    "pages": "17-39"
+  },
+  {
+    "title": "INTLAB implementation of an interval global optimization algorithm",
+    "authors": "Pál, L., & Csendes, T.",
+    "year": 2009,
+    "venue": "Optimization Methods and Software",
+    "volume": "24(4–5)",
+    "pages": "749–759",
+    "doi": "10.1080/10556780902753395"
+  },
+  {
+    "title": "Some notes on drawing twofolds in 4-dimensional Euclidean space",
+    "authors": "Oláh-Gál, R., & Pál, L.",
+    "year": 2009,
+    "venue": "Acta Universitatis Sapientiae, Informatica",
+    "volume": "1(2)",
+    "pages": "125-133"
+  },
+  {
+    "title": "Shepard interpolation with stationary points",
+    "authors": "Pál, L., & Oláh-Gál, R.",
+    "year": 2009,
+    "venue": "Acta Universitatis Sapientiae, Informatica",
+    "volume": "1(1)",
+    "pages": "5-13"
+  },
+  {
+    "title": "The GLOBAL optimization method revisited",
+    "authors": "Csendes, T., Pál, L., Sendín, J. O. H., & Banga, J. R.",
+    "year": 2007,
+    "venue": "Optimization Letters",
+    "volume": "2(4)",
+    "pages": "445–454",
+    "doi": "10.1007/s11590-007-0072-3"
+  }
+]

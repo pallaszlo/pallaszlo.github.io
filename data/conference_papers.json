@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Application of constrained optimization in index tracking portfolio construction",
+    "authors": "Kristó, Cs., & Pál, L.",
+    "year": 2025,
+    "venue": "17th International Conference on Economics and Business: Challenges in the Carpathian Basin",
+    "pages": "351-367",
+    "publisher": "Editura RISOPRINT"
+  },
+  {
+    "title": "A comparative analysis of collaborative filtering and content-based approaches toward hybrid solutions",
+    "authors": "Kristó, Cs., & Pál, L.",
+    "year": 2025,
+    "venue": "17th International Conference on Economics and Business: Challenges in the Carpathian Basin",
+    "pages": "522-537",
+    "publisher": "Editura RISOPRINT"
+  },
+  {
+    "title": "Numerical methods for parameter estimation of random coefficient demand systems",
+    "authors": "Pál, L., & Sándor, Zs.",
+    "year": 2022,
+    "venue": "Proceedings of Hungarian Global Optimization Workshop (HUGO2022)",
+    "pages": "159-162"
+  },
+  {
+    "title": "Részvényportfóliók optimalizálása webszolgáltatások segítségével",
+    "authors": "Simon Lehel, T., & Pál, L.",
+    "year": 2019,
+    "venue": "Studium sorozat"
+  },
+  {
+    "title": "Improved versions of the GLOBAL optimization algorithm and the globalJ modularized toolbox",
+    "authors": "Bánhelyi, B., Csendes, T., Lévai, B., Zombori, D., & Pál, L.",
+    "year": 2019,
+    "venue": "AIP Conference Proceedings",
+    "doi": "10.1063/1.5089989"
+  },
+  {
+    "title": "An improved stochastic local search method in a multistart framework",
+    "authors": "Pál, L., & Csendes, T.",
+    "year": 2015,
+    "venue": "2015 IEEE 10th Jubilee International Symposium on Applied Computational Intelligence and Informatics",
+    "pages": "117-120",
+    "doi": "10.1109/saci.2015.7208182"
+  },
+  {
+    "title": "Wireless sensor network localization using a multistage approach",
+    "authors": "Pál, L.",
+    "year": 2014,
+    "venue": "2014 IEEE 9th IEEE International Symposium on Applied Computational Intelligence and Informatics (SACI)",
+    "pages": "253–257",
+    "doi": "10.1109/SACI.2014.6840071"
+  },
+  {
+    "title": "Comparison of multistart global optimization algorithms on the BBOB noiseless testbed",
+    "authors": "Pál, L.",
+    "year": 2013,
+    "venue": "Proceedings of the 15th Annual Conference Companion on Genetic and Evolutionary Computation",
+    "pages": "1153–1160",
+    "doi": "10.1145/2464576.2482693"
+  },
+  {
+    "title": "Benchmarking a hybrid multi level single linkage algorithm on the BBOB noiseless testbed",
+    "authors": "Pál, L.",
+    "year": 2013,
+    "venue": "Proceedings of the 15th Annual Conference Companion on Genetic and Evolutionary Computation",
+    "pages": "1145–1152",
+    "doi": "10.1145/2464576.2482692"
+  },
+  {
+    "title": "Efficient estimation of loads in service networks",
+    "authors": "Pál, L., & Csendes, T.",
+    "year": 2011,
+    "venue": "Proceedings of the 10th International Conference on Applied Informatics (ICAI2010)",
+    "pages": "621–629"
+  },
+  {
+    "title": "Globális optimalizálási algoritmusok korlátos feladatokra",
+    "authors": "Pál, L.",
+    "year": 2010,
+    "venue": "Doktorandus fórum",
+    "pages": "120-127"
+  },
+  {
+    "title": "A basic interval global optimization procedure for Matlab/INTLAB",
+    "authors": "Csendes, T., & Pál, L.",
+    "year": 2008,
+    "venue": "Proceedings of International Symposium on Nonlinear Theory and its Applications (NOLTA2008)",
+    "pages": "592-595"
+  },
+  {
+    "title": "Improvements on the GLOBAL optimization algorithm with numerical tests",
+    "authors": "Pál, L., & Csendes, T.",
+    "year": 2007,
+    "venue": "Proceedings of the 7th International Conference on Applied Informatics (ICAI 2007)",
+    "pages": "101-108"
+  },
+  {
+    "title": "A genetic algorithm for the two-dimensional Single Large Object Placement Problem",
+    "authors": "Pál, L.",
+    "year": 2006,
+    "venue": "Proceedings of the 3rd Romanian-Hungarian Joint Symposium on Applied Computational Intelligence",
+    "pages": "253-260"
+  },
+  {
+    "title": "Presentation of the Sapi-Cut program package",
+    "authors": "Pál, L.",
+    "year": 2005,
+    "venue": "Proceedings of Workshop on Cutting Stock Problems 2005",
+    "pages": "65-73"
+  },
+  {
+    "title": "Discrete approximation",
+    "authors": "Oláh-Gál, R., & Pál, L.",
+    "year": 2004,
+    "venue": "Proceedings of the 6th International Conference on Applied Informatics (ICAI 2007)",
+    "pages": "409-415"
+  }
+]
