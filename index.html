@@ -115,7 +115,7 @@
                     <i class="fas fa-briefcase"></i>
                     <div>
                         <strong>Associate Professor</strong>
-                        <p>Since 2014, Sapientia University</p>
+                        <p>Sapientia University, since 2014</p>
                     </div>
                 </div>
 
@@ -132,15 +132,10 @@
             <ul class="research-interests">
                 <li><i class="fas fa-check-circle"></i> Global optimization: stochastic, evolutionary methods, interval methods</li>
                 <li><i class="fas fa-check-circle"></i> Local search methods and derivative-free optimization</li>
+                <li><i class="fas fa-check-circle"></i> Benchmarking of optimization algorithms</li>
                 <li><i class="fas fa-check-circle"></i> Applications in economics, engineering, and finance</li>
                 <li><i class="fas fa-check-circle"></i> Portfolio optimization and asset allocation strategies</li>
             </ul>
-
-            <p>
-                My publications are available on
-                <a href="https://scholar.google.com/citations?user=nDlGWqsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> and
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10026711" target="_blank" rel="noopener">MTMT</a>.
-            </p>
 
             <div class="cv-download">
                 <a href="assets/cv.pdf" class="button" download>
@@ -170,54 +165,64 @@
         </section>
 
         <section id="research" class="section">
-            <h2>Research Highlights</h2>
-            
-            <div class="research-item">
-                <h3><i class="fas fa-globe"></i> GLOBAL Optimization Method</h3>
-                <p>
-                    A multi-start type stochastic method for bound-constrained global optimization problems. 
-                    The method combines sampling, clustering, and local search to efficiently find global minima. 
-                    Available in Fortran, C, MATLAB, and Java implementations with parallelization support.
-                </p>
-                <div class="research-links">
-                    <a href="https://doi.org/10.1007/978-3-030-02375-1" target="_blank">
-                        <i class="fas fa-book"></i> SpringerBrief Book (2018)
-                    </a>
-                    <a href="https://doi.org/10.1162/EVCO_a_00089" target="_blank">
-                        <i class="fas fa-file-alt"></i> Evolutionary Computation (2012)
-                    </a>
-                </div>
-            </div>
+            <h2>Research</h2>
+            <p class="section-intro">
+                My research focuses on optimization algorithms and their practical applications in various fields.
+            </p>
+
+            <h3>Research Highlights</h3>
 
             <div class="research-item">
-                <h3><i class="fas fa-random"></i> UNIRANDI Local Search</h3>
+                <h4><i class="fas fa-project-diagram"></i> GLOBAL Method and Local Search Algorithms</h4>
                 <p>
-                    A stochastic local search algorithm that performs line searches along promising random directions. 
-                    The improved version incorporates information from previous optimization stages, combining random 
-                    directions with more promising search directions to accelerate convergence.
-                </p>
-                <div class="research-links">
-                    <a href="https://doi.org/10.1007/s10100-017-0470-2" target="_blank">
-                        <i class="fas fa-file-alt"></i> CEJOR (2017)
-                    </a>
-                    <a href="https://doi.org/10.1109/saci.2015.7208182" target="_blank">
-                        <i class="fas fa-file-alt"></i> IEEE SACI (2015)
-                    </a>
-                </div>
-            </div>
-
-            <div class="research-item">
-                <h3><i class="fas fa-chart-pie"></i> Applications</h3>
-                <p>
-                    My optimization methods have been successfully applied to various challenging problems across 
-                    multiple disciplines:
+                    Co-developer of the <strong>GLOBAL</strong> multistart clustering optimization method for bound-constrained
+                    global optimization problems. The method combines stochastic sampling, clustering, and local search techniques.
+                    Development of the <strong>UNIRANDI</strong> stochastic local search algorithm, which uses promising random
+                    directions for efficient optimization.
                 </p>
                 <ul>
-                    <li><strong>Economics:</strong> Random coefficient logit demand models and market analysis</li>
-                    <li><strong>Finance:</strong> Portfolio optimization using covariance matrix estimators</li>
-                    <li><strong>Engineering:</strong> Combustion mechanism optimization and chemical kinetics</li>
-                    <li><strong>Networks:</strong> Wireless sensor network localization</li>
+                    <li>GLOBAL algorithm implementations in Fortran, C, MATLAB, and Java</li>
+                    <li>Published in <em>Springer Optimization Brief</em> (2018): "The GLOBAL Optimization Algorithm"</li>
+                    <li>UNIRANDI improvements published in <em>Central European Journal of Operations Research</em> (2017)</li>
                 </ul>
+            </div>
+
+            <div class="research-item">
+                <h4><i class="fas fa-flask"></i> Evolutionary Computation and Benchmarking</h4>
+                <p>
+                    Extensive work on <strong>benchmarking optimization algorithms</strong> using standardized test suites.
+                    Comparative analysis of global search algorithms including evolutionary methods, multi-start approaches,
+                    and derivative-free techniques on continuous black-box optimization problems.
+                </p>
+                <ul>
+                    <li>BBOB (Black-Box Optimization Benchmarking) studies comparing multiple optimization methods</li>
+                    <li>Published in <em>Evolutionary Computation</em> journal (MIT Press)</li>
+                    <li>Performance evaluation of GLOBAL, MLSL, NEWUOA, and evolutionary algorithms</li>
+                </ul>
+            </div>
+
+            <div class="research-item">
+                <h4><i class="fas fa-chart-line"></i> Econometric Models and Portfolio Optimization</h4>
+                <p>
+                    Application of optimization techniques to <strong>econometric parameter estimation</strong> and
+                    <strong>financial portfolio construction</strong>. Focus on random coefficient logit demand models
+                    and asset allocation strategies using covariance matrix estimators.
+                </p>
+                <ul>
+                    <li>Random coefficient logit model estimation with emphasis on finding global optima</li>
+                    <li>Published in <em>International Journal of Industrial Organization</em> (2023)</li>
+                    <li>Portfolio optimization studies in <em>Acta Universitatis Sapientiae, Economics and Business</em></li>
+                    <li>Index tracking with sector weight and turnover constraints (2025)</li>
+                </ul>
+            </div>
+
+            <div class="research-links">
+                <a href="https://scholar.google.com/citations?user=nDlGWqsAAAAJ&hl=en" target="_blank" rel="noopener">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10026711" target="_blank" rel="noopener">
+                    <i class="fas fa-database"></i> MTMT Profile
+                </a>
             </div>
         </section>
 
